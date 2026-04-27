@@ -4,8 +4,7 @@ updates:
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: weekly
-      day: monday
+      interval: daily
     open-pull-requests-limit: 10
     assignees:
       - akouta
@@ -13,17 +12,14 @@ updates:
       stackra:
         patterns:
           - '@stackra/*'
-          - '@nesvel/*'
       dev-dependencies:
         dependency-type: development
         exclude-patterns:
           - '@stackra/*'
-          - '@nesvel/*'
       production-dependencies:
         dependency-type: production
         exclude-patterns:
           - '@stackra/*'
-          - '@nesvel/*'
 
   - package-ecosystem: github-actions
     directory: /
@@ -31,3 +27,7 @@ updates:
       interval: weekly
       day: monday
     open-pull-requests-limit: 5
+    groups:
+      github-actions:
+        patterns:
+          - '*'
