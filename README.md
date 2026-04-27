@@ -80,7 +80,11 @@ export default defineConfig({
 ## Utilities
 
 ```typescript
-import { loadPackageJson, computeExternals, buildBanner } from '@stackra/tsup-config';
+import {
+  loadPackageJson,
+  computeExternals,
+  buildBanner,
+} from '@stackra/tsup-config';
 
 const pkg = loadPackageJson();
 const externals = computeExternals(pkg);

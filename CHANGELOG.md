@@ -10,7 +10,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
-- Migrated npm scope from `@nesvel/tsup-config` to `@stackra/tsup-config`
+- Migrated npm scope from `@stackra/tsup-config` to `@stackra/tsup-config`
 - Updated repository to `stackra-inc/tsup-config` on GitHub
 - Updated author to Stackra L.L.C
 - Updated CI/CD workflows for the new scope and repository

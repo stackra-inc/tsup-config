@@ -1,13 +1,14 @@
 {
-  "extends": "@nesvel/typescript-config/bundler",
+  // Extends bundler: base + no DOM libs
+  "extends": "@stackra/typescript-config/bundler.json",
+
   "compilerOptions": {
-    "ignoreDeprecations": "6.0",
     "outDir": "./dist",
     "rootDir": "./src",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+
+    "paths": { "@/*": ["./src/*"] }
   },
+
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "**/*.spec.ts", "**/*.test.ts"]
+  "exclude": ["node_modules", "dist"]
 }
