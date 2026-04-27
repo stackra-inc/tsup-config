@@ -61,71 +61,66 @@
   <!-- Bottom accent line -->
   <rect x="0" y="277" width="900" height="3" fill="url(#accentGrad)" rx="2" />
 
-  <!-- ── HTTP / Network Icon (left side) ── -->
+  <!-- ── Build / Bundle Icon (left side) ── -->
   <!-- Glow halo -->
   <circle cx="100" cy="140" r="70" fill="url(#iconGlow)" />
 
-  <!-- Outer circle (network node) -->
-  <circle cx="100" cy="140" r="44" fill="none" stroke="#38bdf8" stroke-width="1.8" opacity="0.9" />
+  <!-- Outer hexagon shape (representing bundling/packaging) -->
+  <polygon points="100,96 138,118 138,162 100,184 62,162 62,118" fill="none" stroke="#38bdf8" stroke-width="1.8" opacity="0.9" />
 
-  <!-- Arrow paths representing request/response flow -->
-  <!-- Outgoing arrow (right) -->
-  <line x1="78" y1="126" x2="122" y2="126" stroke="#38bdf8" stroke-width="1.5" opacity="0.7" />
-  <polyline points="117,122 122,126 117,130" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.7" />
-  <!-- Incoming arrow (left) -->
-  <line x1="122" y1="154" x2="78" y2="154" stroke="#818cf8" stroke-width="1.5" opacity="0.7" />
-  <polyline points="83,150 78,154 83,158" fill="none" stroke="#818cf8" stroke-width="1.5" opacity="0.7" />
+  <!-- Inner cube/box lines (representing a package) -->
+  <line x1="100" y1="96" x2="100" y2="140" stroke="#818cf8" stroke-width="1.2" opacity="0.6" />
+  <line x1="62" y1="118" x2="100" y2="140" stroke="#818cf8" stroke-width="1.2" opacity="0.6" />
+  <line x1="138" y1="118" x2="100" y2="140" stroke="#818cf8" stroke-width="1.2" opacity="0.6" />
+  <line x1="100" y1="140" x2="100" y2="184" stroke="#c084fc" stroke-width="1.2" opacity="0.5" />
+
+  <!-- Arrow pointing down into box (build output) -->
+  <line x1="100" y1="108" x2="100" y2="130" stroke="#38bdf8" stroke-width="2" opacity="0.8" />
+  <polyline points="94,124 100,130 106,124" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.8" />
+
+  <!-- Small dots at hexagon vertices -->
+  <circle cx="100" cy="96"  r="3" fill="#38bdf8" opacity="0.7" />
+  <circle cx="138" cy="118" r="3" fill="#818cf8" opacity="0.7" />
+  <circle cx="138" cy="162" r="3" fill="#c084fc" opacity="0.7" />
+  <circle cx="100" cy="184" r="3" fill="#818cf8" opacity="0.7" />
+  <circle cx="62"  cy="162" r="3" fill="#38bdf8" opacity="0.7" />
+  <circle cx="62"  cy="118" r="3" fill="#c084fc" opacity="0.7" />
 
   <!-- Center hub dot -->
-  <circle cx="100" cy="140" r="6" fill="#38bdf8" opacity="0.3" />
-  <circle cx="100" cy="140" r="3" fill="#38bdf8" opacity="0.8" />
-
-  <!-- Network nodes around the circle -->
-  <circle cx="100" cy="96"  r="4" fill="#38bdf8" opacity="0.6" />
-  <circle cx="100" cy="184" r="4" fill="#818cf8" opacity="0.6" />
-  <circle cx="56"  cy="140" r="4" fill="#c084fc" opacity="0.6" />
-  <circle cx="144" cy="140" r="4" fill="#38bdf8" opacity="0.6" />
-
-  <!-- Connection lines from center to nodes -->
-  <line x1="100" y1="137" x2="100" y2="100" stroke="#38bdf8" stroke-width="0.8" opacity="0.4" />
-  <line x1="100" y1="143" x2="100" y2="180" stroke="#818cf8" stroke-width="0.8" opacity="0.4" />
-  <line x1="97"  y1="140" x2="60"  y2="140" stroke="#c084fc" stroke-width="0.8" opacity="0.4" />
-  <line x1="103" y1="140" x2="140" y2="140" stroke="#38bdf8" stroke-width="0.8" opacity="0.4" />
-
-  <!-- "HTTP" label -->
-  <text x="100" y="143" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#38bdf8" opacity="0.0">HTTP</text>
+  <circle cx="100" cy="140" r="5" fill="#38bdf8" opacity="0.3" />
+  <circle cx="100" cy="140" r="2.5" fill="#38bdf8" opacity="0.8" />
 
   <!-- ── Main content (center-left) ── -->
   <!-- Package name -->
-  <text x="175" y="105" font-family="'Courier New', Courier, monospace" font-size="32" font-weight="700" fill="url(#textGrad)">@stackra/ts-http</text>
+  <text x="175" y="105" font-family="'Courier New', Courier, monospace" font-size="30" font-weight="700" fill="url(#textGrad)">@stackra/tsup-config</text>
 
   <!-- Description -->
-  <text x="175" y="133" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#94a3b8">Middleware-driven HTTP client — axios underneath, decorators &amp; DI integration</text>
+  <text x="175" y="133" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#94a3b8">Shared tsup configuration presets for Stackra packages</text>
 
   <!-- Feature badges -->
-  <!-- Axios badge -->
-  <rect x="175" y="148" width="52" height="22" rx="11" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1" />
-  <text x="201" y="163" text-anchor="middle" font-family="monospace" font-size="11" fill="#38bdf8">Axios</text>
+  <!-- Presets badge -->
+  <rect x="175" y="148" width="62" height="22" rx="11" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1" />
+  <text x="206" y="163" text-anchor="middle" font-family="monospace" font-size="11" fill="#38bdf8">Presets</text>
 
-  <!-- Middleware badge -->
-  <rect x="234" y="148" width="82" height="22" rx="11" fill="#1e1b4b" stroke="#818cf8" stroke-width="1" />
-  <text x="275" y="163" text-anchor="middle" font-family="monospace" font-size="11" fill="#818cf8">Middleware</text>
+  <!-- ESM/CJS badge -->
+  <rect x="244" y="148" width="72" height="22" rx="11" fill="#1e1b4b" stroke="#818cf8" stroke-width="1" />
+  <text x="280" y="163" text-anchor="middle" font-family="monospace" font-size="11" fill="#818cf8">ESM/CJS</text>
 
-  <!-- Decorators badge -->
-  <rect x="323" y="148" width="82" height="22" rx="11" fill="#2e1065" stroke="#c084fc" stroke-width="1" />
-  <text x="364" y="163" text-anchor="middle" font-family="monospace" font-size="11" fill="#c084fc">Decorators</text>
+  <!-- DTS badge -->
+  <rect x="323" y="148" width="42" height="22" rx="11" fill="#2e1065" stroke="#c084fc" stroke-width="1" />
+  <text x="344" y="163" text-anchor="middle" font-family="monospace" font-size="11" fill="#c084fc">DTS</text>
 
-  <!-- Retry badge -->
-  <rect x="412" y="148" width="50" height="22" rx="11" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1" />
-  <text x="437" y="163" text-anchor="middle" font-family="monospace" font-size="11" fill="#38bdf8">Retry</text>
+  <!-- NestJS badge -->
+  <rect x="372" y="148" width="58" height="22" rx="11" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1" />
+  <text x="401" y="163" text-anchor="middle" font-family="monospace" font-size="11" fill="#38bdf8">NestJS</text>
 
-  <!-- DI badge -->
-  <rect x="469" y="148" width="34" height="22" rx="11" fill="#1e1b4b" stroke="#818cf8" stroke-width="1" />
-  <text x="486" y="163" text-anchor="middle" font-family="monospace" font-size="11" fill="#818cf8">DI</text>
+  <!-- React badge -->
+  <rect x="437" y="148" width="52" height="22" rx="11" fill="#1e1b4b" stroke="#818cf8" stroke-width="1" />
+  <text x="463" y="163" text-anchor="middle" font-family="monospace" font-size="11" fill="#818cf8">React</text>
 
   <!-- Version badge -->
   <rect x="175" y="178" width="56" height="20" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1" />
-  <text x="203" y="192" text-anchor="middle" font-family="monospace" font-size="10" fill="#94a3b8">v0.1.0</text>
+  <text x="203" y="192" text-anchor="middle" font-family="monospace" font-size="10" fill="#94a3b8">v1.0.4</text>
 
   <!-- ── Code snippet (right side) ── -->
   <rect x="560" y="30" width="320" height="220" rx="8" fill="url(#codeGrad)" stroke="#334155" stroke-width="1" />
@@ -134,35 +129,35 @@
   <circle cx="596" cy="50" r="5" fill="#f59e0b" opacity="0.8" />
   <circle cx="612" cy="50" r="5" fill="#22c55e" opacity="0.8" />
   <!-- File label -->
-  <text x="680" y="54" text-anchor="middle" font-family="monospace" font-size="10" fill="#64748b">http-client.ts</text>
+  <text x="700" y="54" text-anchor="middle" font-family="monospace" font-size="10" fill="#64748b">tsup.config.ts</text>
   <!-- Divider -->
   <line x1="560" y1="62" x2="880" y2="62" stroke="#334155" stroke-width="1" />
 
   <!-- Code lines -->
-  <text x="576" y="82"  font-family="'Courier New', Courier, monospace" font-size="11" fill="#64748b">// http-client.ts</text>
+  <text x="576" y="82"  font-family="'Courier New', Courier, monospace" font-size="11" fill="#64748b">// tsup.config.ts</text>
 
-  <text x="576" y="100" font-family="'Courier New', Courier, monospace" font-size="11" fill="#818cf8">import</text>
-  <text x="618" y="100" font-family="'Courier New', Courier, monospace" font-size="11" fill="#e2e8f0">{ HttpFacade }</text>
-  <text x="726" y="100" font-family="'Courier New', Courier, monospace" font-size="11" fill="#818cf8">from</text>
+  <text x="576" y="102" font-family="'Courier New', Courier, monospace" font-size="11" fill="#818cf8">import</text>
+  <text x="618" y="102" font-family="'Courier New', Courier, monospace" font-size="11" fill="#e2e8f0">{ defineConfig }</text>
+  <text x="738" y="102" font-family="'Courier New', Courier, monospace" font-size="11" fill="#818cf8">from</text>
 
-  <text x="576" y="116" font-family="'Courier New', Courier, monospace" font-size="11" fill="#38bdf8">  '@stackra/ts-http'</text>
+  <text x="576" y="118" font-family="'Courier New', Courier, monospace" font-size="11" fill="#38bdf8">  'tsup'</text>
 
-  <text x="576" y="138" font-family="'Courier New', Courier, monospace" font-size="11" fill="#818cf8">const</text>
-  <text x="612" y="138" font-family="'Courier New', Courier, monospace" font-size="11" fill="#e2e8f0">http = container</text>
+  <text x="576" y="138" font-family="'Courier New', Courier, monospace" font-size="11" fill="#818cf8">import</text>
+  <text x="618" y="138" font-family="'Courier New', Courier, monospace" font-size="11" fill="#e2e8f0">{ basePreset }</text>
+  <text x="732" y="138" font-family="'Courier New', Courier, monospace" font-size="11" fill="#818cf8">from</text>
 
-  <text x="576" y="154" font-family="'Courier New', Courier, monospace" font-size="11" fill="#94a3b8">  .resolve(HttpFacade)</text>
+  <text x="576" y="154" font-family="'Courier New', Courier, monospace" font-size="11" fill="#38bdf8">  '@stackra/tsup-config'</text>
 
-  <text x="576" y="174" font-family="'Courier New', Courier, monospace" font-size="11" fill="#818cf8">const</text>
-  <text x="612" y="174" font-family="'Courier New', Courier, monospace" font-size="11" fill="#e2e8f0">users =</text>
-  <text x="660" y="174" font-family="'Courier New', Courier, monospace" font-size="11" fill="#818cf8">await</text>
+  <text x="576" y="178" font-family="'Courier New', Courier, monospace" font-size="11" fill="#818cf8">export default</text>
+  <text x="672" y="178" font-family="'Courier New', Courier, monospace" font-size="11" fill="#e2e8f0">defineConfig({</text>
 
-  <text x="576" y="190" font-family="'Courier New', Courier, monospace" font-size="11" fill="#94a3b8">  http.get(</text>
-  <text x="648" y="190" font-family="'Courier New', Courier, monospace" font-size="11" fill="#86efac">'/api/users'</text>
-  <text x="744" y="190" font-family="'Courier New', Courier, monospace" font-size="11" fill="#94a3b8">)</text>
+  <text x="576" y="196" font-family="'Courier New', Courier, monospace" font-size="11" fill="#94a3b8">  ...basePreset,</text>
 
-  <text x="576" y="210" font-family="'Courier New', Courier, monospace" font-size="11" fill="#64748b">// middleware: auth, retry,</text>
-  <text x="576" y="226" font-family="'Courier New', Courier, monospace" font-size="11" fill="#64748b">// logging — all automatic</text>
+  <text x="576" y="214" font-family="'Courier New', Courier, monospace" font-size="11" fill="#94a3b8">  minify:</text>
+  <text x="642" y="214" font-family="'Courier New', Courier, monospace" font-size="11" fill="#86efac">true</text>
+
+  <text x="576" y="232" font-family="'Courier New', Courier, monospace" font-size="11" fill="#94a3b8">})</text>
 
   <!-- Cursor blink -->
-  <rect x="746" y="226" width="7" height="12" fill="#38bdf8" opacity="0.8" rx="1" />
+  <rect x="596" y="232" width="7" height="12" fill="#38bdf8" opacity="0.8" rx="1" />
 </svg>

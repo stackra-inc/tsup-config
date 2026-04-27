@@ -1,6 +1,7 @@
 {
   "extends": "@nesvel/typescript-config/bundler",
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",
     "outDir": "./dist",
     "rootDir": "./src",
     "paths": {

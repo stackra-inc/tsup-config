@@ -1,6 +1,6 @@
 {
   "name": "@stackra/tsup-config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Shared tsup configuration presets for Stackra packages",
   "private": false,
   "license": "MIT",
@@ -52,7 +52,7 @@
     "@types/node": "^24.10.1",
     "eslint": "^9.39.1",
     "prettier": "^3.7.4",
-    "typescript": "^5.9.3",
+    "typescript": "^6.0.3",
     "vite": "^7.2.6"
   },
   "peerDependencies": {
