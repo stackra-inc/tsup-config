@@ -15,7 +15,7 @@ export function buildBanner(pkg: IPackageJson): string {
 
   // Get author name with fallback
   const author = pkg.author || 'Unknown Author';
-  
+
   // Get license type with fallback
   const license = pkg.license || 'UNLICENSED';
 

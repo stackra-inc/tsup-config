@@ -1,8 +1,8 @@
-import type { Options } from "tsup";
+import type { Options } from 'tsup';
 
-import { buildBanner } from "@/utils/build-banner";
-import { loadPackageJson } from "@/utils/load-package-json";
-import { computeExternals } from "@/utils/compute-externals";
+import { buildBanner } from '@/utils/build-banner';
+import { loadPackageJson } from '@/utils/load-package-json';
+import { computeExternals } from '@/utils/compute-externals';
 
 /**
  * Base Tsup Configuration Preset
@@ -51,10 +51,10 @@ export const preset: Options = (() => {
 
   return {
     // Entry point(s) for the build
-    entry: ["src/index.ts"],
+    entry: ['src/index.ts'],
 
     // Output formats: ES Module and CommonJS
-    format: ["esm", "cjs"],
+    format: ['esm', 'cjs'],
 
     // Generate TypeScript declaration files (.d.ts)
     dts: true,
@@ -69,7 +69,7 @@ export const preset: Options = (() => {
     treeshake: true,
 
     // Mark all dependencies as external (won't be bundled)
-    external: ["figlet", ...externals],
+    external: ['figlet', ...externals],
 
     // Add license banner to JavaScript output
     banner: {
@@ -77,16 +77,16 @@ export const preset: Options = (() => {
     },
 
     // Generate source maps in development only
-    sourcemap: process.env.NODE_ENV === "development",
+    sourcemap: process.env.NODE_ENV === 'development',
 
     // Don't minify output (keeps code readable)
     minify: false,
 
     // Target ES2022 for modern JavaScript features
-    target: "es2022",
+    target: 'es2022',
 
     // Output directory
-    outDir: "dist",
+    outDir: 'dist',
 
     // ✅ Always bundle by default, so consumers don't have to override
     bundle: true,

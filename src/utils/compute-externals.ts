@@ -9,10 +9,10 @@ import type { IPackageJson } from '@/interfaces/package-json.interface';
 export function computeExternals(pkg: IPackageJson): string[] {
   // Extract production dependencies
   const deps = Object.keys(pkg.dependencies || {});
-  
+
   // Extract development dependencies
   const devDeps = Object.keys(pkg.devDependencies || {});
-  
+
   // Extract peer dependencies
   const peerDeps = Object.keys(pkg.peerDependencies || {});
 

@@ -80,11 +80,7 @@ export default defineConfig({
 ## Utilities
 
 ```typescript
-import {
-  loadPackageJson,
-  computeExternals,
-  buildBanner,
-} from '@stackra/tsup-config';
+import { loadPackageJson, computeExternals, buildBanner } from '@stackra/tsup-config';
 
 const pkg = loadPackageJson();
 const externals = computeExternals(pkg);
@@ -93,17 +89,17 @@ const banner = buildBanner(pkg);
 
 ## Exports
 
-| Export             | Description                              |
-| ------------------ | ---------------------------------------- |
-| `basePreset`       | Standard TypeScript library              |
+| Export             | Description                                |
+| ------------------ | ------------------------------------------ |
+| `basePreset`       | Standard TypeScript library                |
 | `nestLibPreset`    | NestJS module/library (tsc for decorators) |
-| `nestAppPreset`    | NestJS application (single-file bundle)  |
-| `cliLibPreset`     | CLI tools and binaries                   |
-| `reactLibPreset`   | React component libraries                |
-| `loadPackageJson`  | Load and parse package.json              |
-| `computeExternals` | Auto-detect dependencies as externals    |
-| `buildBanner`      | Generate license banner for output       |
-| `viteAdapter`      | Vite integration adapter                 |
+| `nestAppPreset`    | NestJS application (single-file bundle)    |
+| `cliLibPreset`     | CLI tools and binaries                     |
+| `reactLibPreset`   | React component libraries                  |
+| `loadPackageJson`  | Load and parse package.json                |
+| `computeExternals` | Auto-detect dependencies as externals      |
+| `buildBanner`      | Generate license banner for output         |
+| `viteAdapter`      | Vite integration adapter                   |
 
 ## License
 
