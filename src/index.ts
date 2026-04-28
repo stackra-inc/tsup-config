@@ -20,5 +20,4 @@ export { loadPackageJson } from './utils/load-package-json';
 export { computeExternals } from './utils/compute-externals';
 
 export * from './utils';
-export * from './adapters';
 export * from './interfaces';
