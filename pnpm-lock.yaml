@@ -28,10 +28,10 @@ importers:
         version: 20.5.0
       '@stackra/prettier-config':
         specifier: ^1.0.5
-        version: 1.0.5(prettier@3.8.3)(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3)(yaml@2.8.3))
+        version: 1.0.7(prettier@3.8.3)(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3)(yaml@2.8.3))
       '@stackra/typescript-config':
         specifier: ^1.0.9
-        version: 1.0.9(typescript@6.0.3)
+        version: 1.0.10(typescript@6.0.3)
       '@types/node':
         specifier: ^25.6.0
         version: 25.6.0
@@ -438,12 +438,6 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@nesvel/tsup-config@1.0.3':
-    resolution: {integrity: sha512-e1+4VREER/saszislU/uvVU+Kzjqa5SZU3C/P9bPah9DrHr32clDdxKDWO73TRY89lXSanU0nsH/4+MsnpeWVg==}
-    engines: {node: '>=20', npm: '>=10'}
-    peerDependencies:
-      tsup: '>=8.0.0'
-
   '@rollup/rollup-android-arm-eabi@4.53.3':
     resolution: {integrity: sha512-mRSi+4cBjrRLoaal2PnqH82Wqyb+d3HsPUN/W+WslCXsZsyHa9ZeQQX/pQsZaVIWDkPcpV6jJ+3KLbTbgnwv8w==}
     cpu: [arm]
@@ -573,14 +567,20 @@ packages:
     resolution: {integrity: sha512-KxXvfapcixpz6rVEB6HPjOUZT22yN6v0vI0urQSk1L8MlEWPDFCZkhw2xmkyoTGYeFw7tWTZd7e3lVzRZRN/EA==}
     engines: {node: '>=18'}
 
-  '@stackra/prettier-config@1.0.5':
-    resolution: {integrity: sha512-UxLVl7sd8R3Zh856AbB+PSBoUBD6CJM+jQetLwpXkcKv82Kfh22B0aCVX3IMBFNrFn/oP12Hm32bSVZNWEOX9w==}
-    engines: {node: '>=20', pnpm: '>=9.0.0'}
+  '@stackra/prettier-config@1.0.7':
+    resolution: {integrity: sha512-VMrbdC/O8IVe4w3b2J71sQBsMZbs4Xb31/V+UblT7dwTyN0VKHQdEj6l0H17faCXVx23FKk2Uoi8tseGs1xeFQ==}
+    engines: {node: '>=22', pnpm: '>=9.0.0'}
     peerDependencies:
       prettier: '>=3.0.0'
 
-  '@stackra/typescript-config@1.0.9':
-    resolution: {integrity: sha512-ZgI06bTj1MbZtJS+ndEPA/opyOXHRUpcQ6M9SeBeKXxspeG0fVSFkC8SW0C1n4T0ToACgd30JWydNL0Vh4lejg==}
+  '@stackra/tsup-config@1.0.9':
+    resolution: {integrity: sha512-EZ62WqYnGrK1IfVtXlu+qC6zcIS7Uh67k82rSLK/Xh7EtrPD1+byAihtx9cW729eW+MJCJa+H65AQlFrEGSBuQ==}
+    engines: {node: '>=22', pnpm: '>=9.0.0'}
+    peerDependencies:
+      tsup: '>=8.0.0'
+
+  '@stackra/typescript-config@1.0.10':
+    resolution: {integrity: sha512-CNUxuk9Gd4PTjdHNbzXgulAaRDIT2Vs3r1f2MjcRQ1XfdzXeU0IHWD6jUvHF9xsdFN/1jOvCMbGIStUyqZYNYg==}
     engines: {node: '>=22', pnpm: '>=9.0.0'}
     peerDependencies:
       typescript: '>=5.0.0'
@@ -2051,10 +2051,6 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@nesvel/tsup-config@1.0.3(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3)(yaml@2.8.3))':
-    dependencies:
-      tsup: 8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3)(yaml@2.8.3)
-
   '@rollup/rollup-android-arm-eabi@4.53.3':
     optional: true
 
@@ -2127,14 +2123,18 @@ snapshots:
 
   '@simple-libs/stream-utils@1.2.0': {}
 
-  '@stackra/prettier-config@1.0.5(prettier@3.8.3)(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3)(yaml@2.8.3))':
+  '@stackra/prettier-config@1.0.7(prettier@3.8.3)(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3)(yaml@2.8.3))':
     dependencies:
-      '@nesvel/tsup-config': 1.0.3(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3)(yaml@2.8.3))
+      '@stackra/tsup-config': 1.0.9(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3)(yaml@2.8.3))
       prettier: 3.8.3
     transitivePeerDependencies:
       - tsup
 
-  '@stackra/typescript-config@1.0.9(typescript@6.0.3)':
+  '@stackra/tsup-config@1.0.9(tsup@8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3)(yaml@2.8.3))':
+    dependencies:
+      tsup: 8.5.1(jiti@2.6.1)(postcss@8.5.12)(typescript@6.0.3)(yaml@2.8.3)
+
+  '@stackra/typescript-config@1.0.10(typescript@6.0.3)':
     dependencies:
       typescript: 6.0.3
 
