@@ -1,6 +1,6 @@
 {
   // Extends bundler: base + no DOM libs
-  "extends": "@stackra/typescript-config/bundler.json",
+  "extends": "@stackra/typescript-config/base",
 
   "compilerOptions": {
     "outDir": "./dist",
