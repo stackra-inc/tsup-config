@@ -55,9 +55,9 @@
     "tsup": "^8.5.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.5.2",
-    "@commitlint/config-conventional": "^20.5.0",
-    "@commitlint/types": "^20.5.0",
+    "@commitlint/cli": "^21.0.0",
+    "@commitlint/config-conventional": "^21.0.0",
+    "@commitlint/types": "^21.0.0",
     "@stackra/eslint-config": "^1.0.0",
     "@stackra/prettier-config": "^1.0.0",
     "@stackra/standardize": "^1.0.2",
@@ -65,7 +65,7 @@
     "eslint": "^10.2.1",
     "husky": "^9.1.7",
     "jsdom": "^29.1.0",
-    "lint-staged": "^16.4.0",
+    "lint-staged": "^17.0.4",
     "prettier": "^3.8.3",
     "typescript": "^6.0.3",
     "vite": "^8.0.10",
